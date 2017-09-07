@@ -1,0 +1,32 @@
+<md-card class="demo-panel">
+  <md-card-title>
+    Angular Material Menu Demo
+  </md-card-title>
+  <md-card-content>
+    <button md-raised-button color="primary" [mdMenuTriggerFor]="menu">
+      Open Menu
+    </button>
+
+    <md-menu #menu="mdMenu">
+      <button md-menu-item [mdMenuTriggerFor]="subMenu">
+        <md-icon>settings</md-icon>
+        <span>Settings</span>
+      </button>
+      <button md-menu-item disabled>
+        <md-icon>voicemail</md-icon>
+        <span>Check voicemail</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>notifications_off</md-icon>
+        <span>Disable alerts</span>
+      </button>
+    </md-menu>
+
+    <md-menu #subMenu="mdMenu">
+        <button md-menu-item>General</button>
+        <button md-menu-item>Display</button>
+        <button md-menu-item>Profile</button>
+    </md-menu>
+
+  </md-card-content>
+</md-card>

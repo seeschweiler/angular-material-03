@@ -1,0 +1,21 @@
+<md-card class="demo-panel">
+  <md-card-title>
+    Angular Material Sidenav Demo
+  </md-card-title>
+  <md-card-content>
+    <md-sidenav-container class="example-container">
+
+      <md-sidenav #sidenav class="example-sidenav" mode="push">
+        Sidenav content goes here!
+      </md-sidenav>
+    
+      <div class="example-sidenav-content">
+        <button type="button" md-button (click)="sidenav.open()">
+          Open Sidenav
+        </button>
+      </div>
+    
+    </md-sidenav-container>
+  </md-card-content>
+</md-card>
+      

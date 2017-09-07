@@ -1,0 +1,11 @@
+.demo-panel {
+    margin: 10px 0px;
+}
+
+.toolbar-icon {
+    padding: 0px 30px;
+}
+  
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
